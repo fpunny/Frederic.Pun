@@ -1,0 +1,184 @@
+.default,body, html {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    z-index: 10;
+    position: fixed;
+    width: 100vw;
+    color: white;
+}
+
+.nav {
+    width: 100%;
+    top: -168px;
+    padding: 0 16px;
+    list-style-type: none;
+    background-color: #191818;
+    justify-content: flex-end;
+    box-shadow: 0px 0px 40px black;
+}
+
+.nav li {
+    padding: 12px 30px;
+    background-color: #191818;
+    transition: background-color 0.4s linear 0s;
+}
+
+.nav li:hover {
+    background-color: #393837;
+}
+
+#menu {
+    display: none;
+    float: left;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.line {
+    background-color: white;
+    height: 3px;
+    width: 26px;
+    margin: 2px 0;
+}
+
+.background {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('src/home.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.magic {
+    color: white;
+    list-style-type: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.magic li {
+    pointer-events: none;
+    font-size: 2.8vw;
+    height: 0;
+    opacity: 0;
+}
+
+#i1 {
+    animation: fade1 8s infinite;
+}
+
+#i2 {
+    animation: fade2 8s infinite;
+}
+
+#i3 {
+    animation: fade3 8s infinite;
+}
+
+.icon {
+    color: white;
+    font-size: 3vw;
+}
+
+.icon a {
+    color: white;
+}
+
+.icon i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0px;
+    height: 0px;
+    padding: 3vw;
+    border: 0.15vw solid white;
+    border-radius: 50%;
+    margin: 0.5vw;
+    transition: color 0.6s linear 0s;
+    transition: background-color 0.6s ease 0s;
+}
+
+.icon i:hover {
+    background-color: white;
+    color: #393838;
+}
+
+/* Breakpoint */
+@media only screen and (max-width: 780px) {
+    /* For mobile phones: */
+    .nav {
+        position: fixed;
+        top: -168px;
+        flex-direction: column-reverse;
+        padding: 0;
+        transition: top 0.4s ease 0s;
+    }
+
+    .nav li {
+        display: flex;
+        justify-content: center;
+    }
+
+    .magic li {
+        font-size: 4.7vw;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 12vw !important;
+    }
+
+    hr {
+        width: 66.5%;
+    }
+
+    .icon {
+        font-size: 4vw;
+    }
+
+    .icon i {
+        padding: 4vw;
+        margin: 1vw;
+    }
+}
+
+@keyframes fade1 {
+    0% {opacity: 0;}
+    8% {opacity: 1;}
+    16% {opacity: 1;}
+    24% {opacity: 1;}
+    32% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@keyframes fade2 {
+    0% {opacity: 0;}
+    40% {opacity: 0;}
+    44% {opacity: 1;}
+    60% {opacity: 1;}
+    64% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@keyframes fade3 {
+    0% {opacity: 0;}
+    72% {opacity: 0;}
+    80% {opacity: 1;}
+    88% {opacity: 1;}
+    96% {opacity: 1;}
+    100% {opacity: 0;}
+}
