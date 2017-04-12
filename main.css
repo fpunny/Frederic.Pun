@@ -18,7 +18,7 @@ nav {
 
 .nav {
     width: 100%;
-    top: -170px;
+    top: -23.5vh;
     padding: 0 16px;
     list-style-type: none;
     background-color: #191818;
@@ -75,15 +75,15 @@ nav {
 }
 
 #i1 {
-    animation: fade1 8s infinite;
+    animation: fade1 9s infinite;
 }
 
 #i2 {
-    animation: fade2 8s infinite;
+    animation: fade2 9s infinite;
 }
 
 #i3 {
-    animation: fade3 8s infinite;
+    animation: fade3 9s infinite;
 }
 
 .icon {
@@ -119,7 +119,7 @@ nav {
     /* For mobile phones: */
     .nav {
         position: fixed;
-        top: -170px;
+        top: -23.5vh;
         flex-direction: column-reverse;
         padding: 0;
         transition: top 0.4s ease 0s;
