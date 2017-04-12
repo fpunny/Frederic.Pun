@@ -17,6 +17,7 @@ nav {
 }
 
 .nav {
+    position: relative;
     width: 100%;
     top: -172px;
     padding: 0 16px;
