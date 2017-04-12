@@ -3,10 +3,10 @@ var dropped = false;
 function togglemenu() {
     var menu = document.getElementById('nav');
     if(dropped === false) {
-        menu.style.top = '0vh';
+        menu.style.top = '0px';
         dropped = true;
     } else {
-        menu.style.top = '-23.5vh';
+        menu.style.top = '-170px';
         dropped = false;
     }
 }
