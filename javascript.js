@@ -6,7 +6,7 @@ function togglemenu() {
         menu.style.top = '0px';
         dropped = true;
     } else {
-        menu.style.top = '-172px';
+        menu.style.top = '-170px';
         dropped = false;
     }
 }
