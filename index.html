@@ -1,5 +1,3 @@
-<!-- https://coolors.co/000f08-136f63-e0ca3c-f34213-3e2f5b -->
-
 <!DOCTYPE HTML>
 <html>
     <head>
@@ -7,19 +5,19 @@
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
         <link type='text/css' rel='stylesheet' href='main.css'>
         <link type='text/css' rel='stylesheet' href='font-awesome-4.7.0/css/font-awesome.min.css'>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <script type="text/javascript" src='javascript.js'></script>
     </head>
     <body>
-        <nav class='default'>
-            <ul id='nav' class='nav default'>
-                <div class='default' style='flex-grow: 1; align-items: center;'>
+        <nav style='position: fixed; width: 100%;'>
+            <ul id='nav'>
+                <div style='display: flex; width: 100%; align-items: center; padding-right: 18px;'>
                     <a href='#'><li style='pointer-events: none;'>Frederic Pun</li></a>
-                    <div class='default' style='flex-grow: 1; justify-content: flex-end; padding: 0 16px;'>
-                        <div onclick='togglemenu()' id='menu'>
-                            <div class='line'></div>
-                            <div class='line'></div>
-                            <div class='line'></div>
-                        </div>
+                    <div style='flex-grow: 1;'></div>
+                    <div onclick='drop()' class='menu'>
+                        <div class='bar'></div>
+                        <div class='bar'></div>
+                        <div class='bar'></div>
                     </div>
                 </div>
                 <a href='#'><li>Home</li></a>
@@ -28,21 +26,6 @@
                 <a href='#'><li>Contact</li></a>
             </ul>
         </nav>
-        <section class='default background' style='justify-content: center; align-items: center; flex-direction: column;'>
-            <h1 class='default' style='color: white; justify-content: center; font-size: 7vw;'>Frederic Pun</h1>
-            <hr width='39%;' style='margin: 0; margin-bottom: 6px; border: 0.2vw solid white;'>
-            <ul class='default magic'>
-                <li id='i1'>First Year University Student</li>
-                <li id='i2'>Co-op Computer Science</li>
-                <li id='i3'>University of Toronto Scaborough</li>
-            </ul>
-            <div class='icon default' style='position: absolute; justify-content: space-around; bottom: 6vh;'>
-                <a href='tel:1-647-962-1311'><i class="fa fa-mobile" aria-hidden="true"></i></a>
-                <a href='mailto:frederic.pun@gmail.com'><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                <a href='https://www.linkedin.com/in/fredericpun/'><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                <a href='https://github.com/fpunny'><i class="fa fa-github" aria-hidden="true"></i></a>
-                <a href='https://www.facebook.com/fredericpun'><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            </div>
-        </section>
+        <section class='background'></section>
     </body>
 </html>

@@ -1,12 +1,12 @@
 var dropped = false;
 
-function togglemenu() {
-    var menu = document.getElementById('nav');
-    if(dropped === false) {
-        menu.style.top = '0px';
+function drop() {
+    var nav = document.getElementById('nav');
+    if (dropped === false) {
+        nav.style.top = '0px';
         dropped = true;
     } else {
-        menu.style.top = '-170px';
+        nav.style.top = '-144px';
         dropped = false;
     }
 }
