@@ -183,4 +183,12 @@
         display: flex;
         font-size: 240% !important;
     }
+    
+    .text {
+        font-size: 14px;
+    }
+    
+    .section hr {
+        width: 60%;
+    }
 }
