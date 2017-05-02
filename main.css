@@ -110,6 +110,17 @@
     color: black;
 }
 
+.list li:before {
+    content: '\f103';
+    font-family: FontAwesome;
+    padding-right: 5px;
+}
+
+.list li {
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
 [class*='tag-'] {
     font-weight: bold;
     font-size: 22px;
