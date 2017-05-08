@@ -114,6 +114,10 @@ hr {
     color: black;
 }
 
+.list {
+    width: 100%;
+}
+
 .list li:before {
     content: '\f103';
     font-family: FontAwesome;
