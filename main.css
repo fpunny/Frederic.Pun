@@ -91,27 +91,43 @@ hr {
     width: 350px;
 }
 
-.icons {
+[class*='icons'] {
     display: flex;
     height: 0;
-    position: relative;
-    top: 34px;
-    font-size: 22px;
 }
 
-.icons i {
+[class*='icons'] i {
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     border: 2px solid white;
-    margin: 0 8px;
-    height: 44px;
-    width: 44px;
     transition: background-color 0.4s ease 0s, color 0.4s ease 0s;
 }
 
-.icons i:hover {
+.icons {
+    position: relative;
+    top: 34px;
+    font-size: 22px;
+}
+
+.icons-mini {
+    font-size: 16px;
+}
+
+.icons i {
+    margin: 0 8px;
+    height: 44px;
+    width: 44px;
+}
+
+.icons-mini i {
+    margin: 0 4px;
+    height: 36px;
+    width: 36px;
+}
+
+[class*='icons'] i:hover {
     background-color: white;
     color: black;
 }
